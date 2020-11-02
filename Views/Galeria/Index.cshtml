@@ -1,0 +1,29 @@
+﻿@model IEnumerable<proyectoFinalCursoAPSNet.Models.Producto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<table class="table" cellspacing="2" cellpadding="5">
+   
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+
+            @{ if (item.URLImagen != null)
+                {
+
+                    <img class="img-thumbnail" src='@Html.DisplayFor(model => item.URLImagen)' alt="Alternate Text" style="width:25%" />
+
+                }
+
+            }
+
+        </tr>
+        }
+    </tbody>
+</table>
+
