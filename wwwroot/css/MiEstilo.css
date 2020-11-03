@@ -80,10 +80,8 @@ body {
     white-space: nowrap;
     line-height: 60px; /*Vertically center the text there */
 }
+br{margin:0.5px;}
 /*p{
     margin-bottom:2px;
 }*/
-br {
-    margin-bottom: 2px;
 
-}
