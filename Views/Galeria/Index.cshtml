@@ -17,6 +17,7 @@
                 {
 
                     <img class="img-thumbnail" src='@Html.DisplayFor(model => item.URLImagen)' alt="Alternate Text" style="width:25%" />
+                    @*@Html.DisplayFor(modelItem => item.Nombre)*@
 
                 }
 
@@ -24,6 +25,41 @@
 
         </tr>
         }
-    </tbody>
-</table>
+
+
+        @*<tr>
+            @{ var itemCount = 0;}
+            @foreach (var item in Model)
+            {
+
+                if (itemCount > 4)
+                {
+                    Html.Raw("<tr>");
+                }
+
+                { if (item.URLImagen != null)
+                    {
+                        <td>
+                            <img class="img-thumbnail" src='@Html.DisplayFor(model => item.URLImagen)' alt="Alternate Text" style="width:25%" /><br />
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+
+                    }
+
+                }
+                if (itemCount > 4)
+                {
+                    Html.Raw("</tr>");
+                    itemCount = 0;
+                 }
+                 else
+                 { itemCount++; }
+            }
+
+            </tr>*@
+
+
+
+        </tbody>
+        </table>
 

@@ -29,13 +29,6 @@ namespace proyectoFinalCursoAPSNet.Controllers
             return View(await _context.Producto.ToListAsync());
         }
 
-        // GET: Productos en Galeria
-        public async Task<IActionResult>Galeria()
-        {
-
-            return View(await _context.Producto.ToListAsync());
-        }
-
         // GET: Productos/Details/5
         public async Task<IActionResult> Details(long? id)
         {
