@@ -80,7 +80,13 @@ body {
     white-space: nowrap;
     line-height: 60px; /*Vertically center the text there */
 }
-br{margin:0.5px;}
+.miDireccion {
+    text-align: center;
+    font-style: italic;
+    line-height: 30pt;
+    font-size: 12pt;
+    color: #222;
+    br{margin:0.5px;}
 /*p{
     margin-bottom:2px;
 }*/
